@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Properties>
+        <property name="FILE_PATH" value="logs" />
+    </Properties>
+    <appenders>
+
+        <Console name="Console" target="SYSTEM_OUT">
+            <!-- 设置日志输出的格式 -->
+            <PatternLayout pattern="[%d{HH:mm:ss:SSS}] [%p] - %l - %m%n"/>
+            <Filters>
+                <ThresholdFilter level="INFO"/>
+            </Filters>
+        </Console>
+
+        <RollingFile name="RollingFileInfo" fileName="/Users/zyt/git/github/springbootdemo/logs/my.log">
+            <Filters>
+                <ThresholdFilter level="INFO"/>
+            </Filters>
+            <PatternLayout pattern="[%d{HH:mm:ss:SSS}] [%p] - %l - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+            </Policies>
+        </RollingFile>
+
+
+</appenders>
+
+<loggers>
+<root level="all">
+    <appender-ref ref="Console"/>
+    <appender-ref ref="RollingFileInfo"/>
+    <Appender-Ref ref="Loghub"/>
+</root>
+</loggers>
+
+        </Configuration>
