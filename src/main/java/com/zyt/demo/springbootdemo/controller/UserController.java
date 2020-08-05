@@ -40,7 +40,7 @@ public class UserController {
     public ModelAndView userList(Model model) {
         model.addAttribute("userList",getUserList());
         model.addAttribute("title", "用户管理");
-        return new ModelAndView("index", "userModel", model);
+        return new ModelAndView("user", "userModel", model);
     }
 
 

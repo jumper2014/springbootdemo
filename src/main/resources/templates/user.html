@@ -10,7 +10,7 @@
 
 <div id="wrapper">
     <div th:replace="~{base/header :: head}"></div>
-    <!--<div th:replace="~{base/header :: header}"></div>-->
+<!--    <div th:replace="~{base/header :: header}"></div>-->
     <div th:replace="~{base/sidebar :: aside}"></div>
 
 </div>
@@ -257,17 +257,46 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="col-md-6">
+                <div class="white-box">
+                    <h2 class="header-title">Basic Forms</h2>
+                    <form>
+                        <div class="form-group">
+                            <label>UserID</label>
+                            <input class="form-control" placeholder="Enter UserID" type="email" id="userId">
+                        </div>
+                        <button class="btn btn-primary" onclick="query()">Search</button>
+                    </form>
+                </div>
+            </div> <!--/.col-md-6-->
+
         </div>
+
+        <!--Start  Footer -->
+        <footer class="footer-main">Copyright &copy; 2020.Company name All rights reserved.<a target="_blank"
+                                                                                              href="http://www.163.com/">测试平台</a>
+        </footer>
+        <!--End footer -->
+
     </div>
-
-    <!--Start  Footer -->
-    <footer class="footer-main">Copyright &copy; 2020.Company name All rights reserved.<a target="_blank"
-                                                                                          href="http://www.163.com/">测试平台</a>
-    </footer>
-    <!--End footer -->
-
+    <!--End row-->
 </div>
-<!--End row-->
+
+<script th:src="@{js/user.js}"></script>
+<!--Begin core plugin -->
+<script th:src="@{assets/js/jquery.min.js}"></script>
+<script th:src="@{assets/js/bootstrap.min.js}"></script>
+<script th:src="@{assets/plugins/moment/moment.js}"></script>
+<script th:src="@{assets/js/jquery.slimscroll.js}"></script>
+<script th:src="@{assets/js/jquery.nicescroll.js}"></script>
+<script th:src="@{assets/js/functions.js}"></script>
+<!-- End core plugin -->
+
+<!--Begin Page Level Plugin-->
+<script th:src="@{assets/plugins/datatables/js/jquery.dataTables.min.js}"></script>
+<script th:src="@{assets/pages/table-data.js}"></script>
 
 </body>
 </html>
