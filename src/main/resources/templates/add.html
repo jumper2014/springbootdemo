@@ -7,7 +7,7 @@
     <title th:text="${userModel.title}"></title>
 </head>
 <body>
-<div th:replace="~{fragments/header :: header}">...</div>
+<div th:replace="~{base/header :: header}">...</div>
 <div th:text="${userModel.title}"></div>
 <form action="/users/add" method="post" th:object="${userModel.user}">
     <input type="hidden" name="userId" th:value="*{userId}">

@@ -7,6 +7,9 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf-8&useSSL=false
     username: root
     password: 123456
+  devtools:
+    restart:
+      enabled: true
 
 #mybatis的相关配置
 mybatis:
@@ -21,3 +24,8 @@ logging:
   config: classpath:log4j2.xml
   level:
     cn.jay.repository: trace
+
+resources: # 指定静态资源的路径
+  static-locations: classpath:/static/
+  cache-period: 0
+

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="utf-8">
+    <title th:text="${userModel.title}"></title>
+</head>
+<body>
+<div th:replace="~{base/header :: head}"></div>
+<!--<div th:replace="~{base/header :: header}"></div>-->
+<div th:replace="~{base/sidebar :: aside}"></div>
+<div th:text="${userModel.title}"></div>
+<table border="1">
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>名字</td>
+        <td>密码11</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${userModel.userList.size()} eq 0">
+        <td colspan="3">没有用户信息!</td>
+    </tr>
+    <tr th:each="user : ${userModel.userList}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.username}"></td>
+        <td th:text="${user.password}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
