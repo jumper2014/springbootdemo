@@ -17,8 +17,7 @@
     <tr>
         <td>ID</td>
         <td>名字</td>
-        <td>电话</td>
-        <td>性别</td>
+        <td>密码</td>
     </tr>
     </thead>
     <tbody>
@@ -26,10 +25,9 @@
         <td colspan="3">没有用户信息!</td>
     </tr>
     <tr th:each="user : ${userModel.userList}">
-        <td th:text="${user.userId}"></td>
-        <td th:text="${user.userName}"></td>
-        <td th:text="${user.phone}"></td>
-        <td th:text="${user.sex}"></td>
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.username}"></td>
+        <td th:text="${user.password}"></td>
     </tr>
     </tbody>
 </table>
