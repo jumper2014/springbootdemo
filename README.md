@@ -2,21 +2,23 @@
 
 
 ### 请求调用链路
-- 前端html
-- 前端js
-- controller
-- service
+- 前端HTML
+- 前端JS
+- Controller
+- Service
 - Mapper
-- mybatis
-- entity
-- dto Response
+- Mybatis
+- Entity
+- DTO Response
 - 前端展示
 
 ### History
-- spring boot 
+- Spring boot 
 - mybatis
 - log4j2
 - Thymeleaf
 - 集成后管模板
+- JS
+- DTO
 
 
