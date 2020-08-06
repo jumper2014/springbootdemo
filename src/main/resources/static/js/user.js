@@ -7,11 +7,11 @@ function query() {
     } else {
         $.ajax({
             type:"GET",
-            url: "/user/findAll",
+            url: "/user/search?id=" + userId,
             cache: false,
             async: false,
             success: function(data) {
-                alert(data);
+                alert(data.userName);
             }
         })
     }

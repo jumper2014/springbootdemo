@@ -1,41 +1,38 @@
-19:44:06.860 INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting SpringBootDemoApplication on zytdeMacBook-Pro.local with PID 8400 (/Users/zyt/git/github/springbootdemo/target/classes started by zyt in /Users/zyt/git/github/springbootdemo)
-19:44:06.862 INFO  org.springframework.boot.SpringApplication 648 logStartupProfileInfo - No active profile set, falling back to default profiles: default
-19:44:06.909 INFO  org.springframework.boot.logging.DeferredLog 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-19:44:06.909 INFO  org.springframework.boot.logging.DeferredLog 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-19:44:07.655 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 247 multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
-19:44:07.658 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 127 registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-19:44:07.679 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 185 registerRepositoriesIn - Finished Spring Data repository scanning in 16ms. Found 0 JDBC repository interfaces.
-19:44:07.691 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 247 multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
-19:44:07.693 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 127 registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-19:44:07.701 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 185 registerRepositoriesIn - Finished Spring Data repository scanning in 4ms. Found 0 JPA repository interfaces.
-19:44:08.172 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2ad7ffa8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-19:44:08.658 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 90 initialize - Tomcat initialized with port(s): 8081 (http)
-19:44:08.677 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8081"]
-19:44:08.690 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
-19:44:08.691 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.30]
-19:44:08.818 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
-19:44:08.819 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 284 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1909 ms
-19:44:09.021 INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-1 - Starting...
-19:44:09.228 INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-1 - Start completed.
-19:44:09.402 INFO  org.hibernate.Version 46 logVersion - HHH000412: Hibernate Core {5.3.15.Final}
-19:44:09.403 INFO  org.hibernate.cfg.Environment 213 <clinit> - HHH000206: hibernate.properties not found
-19:44:09.573 INFO  org.hibernate.annotations.common.reflection.java.JavaReflectionManager 49 <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-19:44:09.786 INFO  org.hibernate.dialect.Dialect 157 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-19:44:10.024 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 416 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
-19:44:10.423 INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 171 initialize - Initializing ExecutorService 'applicationTaskExecutor'
-19:44:10.469 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration 226 openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-19:44:10.507 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping 54 <init> - Adding welcome page: class path resource [static/index.html]
-19:44:10.565 WARN  org.thymeleaf.templatemode.TemplateMode 150 parse - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-19:44:10.741 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 57 startServer - LiveReload server is running on port 35729
-19:44:10.769 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8081"]
-19:44:10.801 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 202 start - Tomcat started on port(s): 8081 (http) with context path ''
-19:44:10.804 INFO  org.springframework.boot.StartupInfoLogger 59 logStarted - Started SpringBootDemoApplication in 4.331 seconds (JVM running for 5.321)
-19:44:11.864 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
-19:44:11.864 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
-19:44:11.873 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 9 ms
-19:45:27.879 INFO  com.zyt.demo.springbootdemo.controller.UserController 29 findAll - 查询用户信息
-
-19:45:37.942 INFO  com.zyt.demo.springbootdemo.controller.UserController 29 findAll - 查询用户信息
-
-19:45:45.937 INFO  com.zyt.demo.springbootdemo.controller.UserController 29 findAll - 查询用户信息
-
+10:53:46.414 INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting SpringBootDemoApplication on zytdeMacBook-Pro.local with PID 10491 (/Users/zyt/git/github/springbootdemo/target/classes started by zyt in /Users/zyt/git/github/springbootdemo)
+10:53:46.415 INFO  org.springframework.boot.SpringApplication 648 logStartupProfileInfo - No active profile set, falling back to default profiles: default
+10:53:46.462 INFO  org.springframework.boot.logging.DeferredLog 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+10:53:46.463 INFO  org.springframework.boot.logging.DeferredLog 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:53:47.159 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 247 multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:53:47.162 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 127 registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:53:47.184 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 185 registerRepositoriesIn - Finished Spring Data repository scanning in 16ms. Found 0 JDBC repository interfaces.
+10:53:47.197 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 247 multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:53:47.198 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 127 registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:53:47.205 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 185 registerRepositoriesIn - Finished Spring Data repository scanning in 3ms. Found 0 JPA repository interfaces.
+10:53:47.597 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f0ff1f6c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:53:48.099 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 90 initialize - Tomcat initialized with port(s): 8081 (http)
+10:53:48.121 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8081"]
+10:53:48.146 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+10:53:48.147 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.30]
+10:53:48.276 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+10:53:48.277 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 284 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1814 ms
+10:53:48.476 INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-1 - Starting...
+10:53:48.642 INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-1 - Start completed.
+10:53:48.786 INFO  org.hibernate.Version 46 logVersion - HHH000412: Hibernate Core {5.3.15.Final}
+10:53:48.788 INFO  org.hibernate.cfg.Environment 213 <clinit> - HHH000206: hibernate.properties not found
+10:53:48.919 INFO  org.hibernate.annotations.common.reflection.java.JavaReflectionManager 49 <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+10:53:49.091 INFO  org.hibernate.dialect.Dialect 157 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10:53:49.306 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 416 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:53:49.751 INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 171 initialize - Initializing ExecutorService 'applicationTaskExecutor'
+10:53:49.808 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration 226 openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:53:49.911 WARN  org.thymeleaf.templatemode.TemplateMode 150 parse - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+10:53:50.114 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 57 startServer - LiveReload server is running on port 35729
+10:53:50.148 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8081"]
+10:53:50.181 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 202 start - Tomcat started on port(s): 8081 (http) with context path ''
+10:53:50.185 INFO  org.springframework.boot.StartupInfoLogger 59 logStarted - Started SpringBootDemoApplication in 4.177 seconds (JVM running for 5.175)
+10:53:51.600 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:53:51.601 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+10:53:51.611 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 10 ms
+10:53:51.734 INFO  com.zyt.demo.springbootdemo.controller.UserController 35 search - 查询用户信息111
+10:53:55.674 INFO  com.zyt.demo.springbootdemo.controller.UserController 35 search - 查询用户信息111
+10:54:03.082 INFO  com.zyt.demo.springbootdemo.controller.UserController 35 search - 查询用户信息111
+10:54:07.840 INFO  com.zyt.demo.springbootdemo.controller.UserController 35 search - 查询用户信息222

@@ -1,18 +1,16 @@
 package com.zyt.demo.springbootdemo.controller;
 
+import com.zyt.demo.springbootdemo.dto.UserResponse;
 import com.zyt.demo.springbootdemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import com.zyt.demo.springbootdemo.entity.User;
-import org.springframework.web.bind.annotation.RestController;
 import com.zyt.demo.springbootdemo.util.Log4j2Util;
 import org.springframework.web.servlet.ModelAndView;
 
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -28,6 +26,14 @@ public class UserController {
     public List<User> findAll() {
         Log4j2Util.logger.info("查询用户信息\n");
         return userService.findAll();
+
+    }
+
+    @RequestMapping(value = "/search", method = RequestMethod.GET, produces = "application/json")
+    @ResponseBody
+    public UserResponse search(String id) {
+        Log4j2Util.logger.info("查询用户信息" + id);
+        return userService.getUserResponse(id);
 
     }
 
